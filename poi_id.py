@@ -177,6 +177,7 @@ def performance(old_list, grid_result):
 # and iterate 3 classifiers (svc, gnb, and neigh) with their parameter sets
 # and iterate 3 feature lists:  1. features_list, 2. total_features, 3. rel_total_features
 from sklearn.pipeline import Pipeline
+from sklearn.model_selection import GridSearchCV
 
 # Declare paremeters grid
 parameters = {svc: {'selector__k':[19, 15, 10, 7], \
