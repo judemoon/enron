@@ -118,7 +118,7 @@ df_scaled = pd.DataFrame(scaler.fit_transform(df_trans), \
 #data = featureFormat(my_dataset, features_list, sort_keys = True)
 #labels, features = targetFeatureSplit(data)
 
-### Task 4: Try a varity of classifiers
+### Task 4: Try a variety of classifiers
 ### Please name your classifier clf for easy export below.
 ### Note that if you want to do PCA or other multi-stage operations,
 ### you'll need to use Pipelines. For more info:
@@ -142,7 +142,7 @@ df_scaled = pd.DataFrame(scaler.fit_transform(df_trans), \
 
 
 
-### Task 4 and 5: Try and tune a varity of classifiers with Pipeline and GridSearchCV
+### Task 4 and 5: Try and tune a variety of classifiers with Pipeline and GridSearchCV
 
 # import sklearn classifiers
 from sklearn.svm import SVC
@@ -178,7 +178,7 @@ def performance(old_list, grid_result):
 # and iterate 3 feature lists:  1. features_list, 2. total_features, 3. rel_total_features
 from sklearn.pipeline import Pipeline
 
-# declare paremeters grid
+# Declare paremeters grid
 parameters = {svc: {'selector__k':[19, 15, 10, 7], \
                      'clf__kernel': ['rbf', 'linear', 'poly'], \
                      'clf__C': [0.1, 1, 10, 100, 1000], \
