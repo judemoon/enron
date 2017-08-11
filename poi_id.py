@@ -1,7 +1,18 @@
 #!/usr/bin/python
 
-import sys
 import pickle
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import random
+import os
+import re
+import sys
+import pprint
+import operator
+import scipy.stats
+from time import time
+import tester
 sys.path.append("../tools/")
 
 from feature_format import featureFormat, targetFeatureSplit
